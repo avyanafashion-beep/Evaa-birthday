@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07152f">
+<title>For Evaa 💙 — Your 18th Birthday</title>
+<style>
+:root{--navy:#061126;--deep:#0a1d3d;--blue:#4fa8ff;--ice:#c9eaff;--white:#f7fbff;--muted:#a9c1df;--glass:rgba(17,43,80,.62);--line:rgba(164,211,255,.2);--gold:#e6f4ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{margin:0;background:radial-gradient(ellipse at 50% -10%,#183e73 0%,#0a1a36 42%,#040b19 100%);color:var(--white);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.45;background-image:radial-gradient(2px 2px at 20% 30%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 70% 20%,#b7dcff 50%,transparent 60%),radial-gradient(2px 2px at 80% 70%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 35% 80%,#b7dcff 50%,transparent 60%),radial-gradient(1px 1px at 55% 50%,#fff 50%,transparent 60%);background-size:280px 250px,350px 300px,420px 350px,310px 280px,240px 240px;z-index:-1}
+a{color:inherit}.wrap{width:min(1060px,calc(100% - 32px));margin:auto}
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(16px);background:rgba(4,12,28,.78);border-bottom:1px solid var(--line)}
+.navinner{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:62px}
+.brand{font-weight:800;letter-spacing:.08em;color:var(--ice);white-space:nowrap}.navlinks{display:flex;gap:16px;overflow:auto;white-space:nowrap;font-size:.85rem;color:var(--muted)}.navlinks a{text-decoration:none}.navlinks a:hover{color:white}
+.hero{min-height:calc(100svh - 62px);display:grid;place-items:center;text-align:center;padding:70px 0 64px;position:relative}
+.orb{width:clamp(120px,25vw,190px);aspect-ratio:1;border-radius:50%;margin:0 auto 26px;background:radial-gradient(circle at 35% 28%,#eaf8ff,#7cc6ff 15%,#2775ca 43%,#102d60 68%,#07152e 72%);box-shadow:0 0 45px #329bff55,0 0 110px #1877ed35;display:grid;place-items:center;font-size:clamp(3rem,10vw,5rem);animation:float 5s ease-in-out infinite}
+.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;color:#a8d8ff;font-weight:800}.hero h1{font-size:clamp(2.7rem,8vw,6.4rem);line-height:1.02;letter-spacing:-.055em;margin:14px 0 18px}.shine{background:linear-gradient(100deg,#fff,#9bd6ff 45%,#fff);background-clip:text;color:transparent}.hero p{max-width:640px;margin:0 auto 28px;color:#c5d8ef;font-size:clamp(1rem,2.6vw,1.2rem)}
+.btn{border:1px solid #8dcfff88;border-radius:999px;padding:13px 22px;background:linear-gradient(110deg,#1e70c5,#439fe8);color:white;font:inherit;font-weight:750;box-shadow:0 8px 30px #1686e744;cursor:pointer;transition:transform .2s,filter .2s;min-height:48px}.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}.btn.secondary{background:#102748;border-color:var(--line);box-shadow:none}
+section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 32px}.kicker{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:#8fcfff;font-weight:800}.section-head h2{font-size:clamp(1.8rem,5vw,3.2rem);line-height:1.12;letter-spacing:-.035em;margin:10px 0 12px}.section-head p{color:var(--muted);margin:0}
+.panel{background:linear-gradient(135deg,rgba(20,51,91,.76),rgba(8,23,48,.78));border:1px solid var(--line);border-radius:24px;padding:clamp(20px,4vw,34px);box-shadow:0 18px 55px #0002;backdrop-filter:blur(10px)}
+.countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:700px;margin:28px auto}
+.timebox{padding:18px 8px;border:1px solid #9dd5ff35;background:#0d2548aa;border-radius:18px;text-align:center}.timebox strong{display:block;font-size:clamp(1.8rem,6vw,3.3rem);line-height:1.1;color:#e4f5ff;font-variant-numeric:tabular-nums}.timebox span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#9fc8ee}
+.center{text-align:center}.subtle{color:var(--muted)}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.location{display:flex;align-items:center;gap:14px}.flag{font-size:2rem}.location h3{margin:0;font-size:1.15rem}.location p{margin:2px 0 0;color:var(--muted);font-size:.9rem}.route{display:flex;align-items:center;gap:12px;margin:28px 0;color:#b9dfff}.route-line{height:2px;flex:1;background:linear-gradient(90deg,#378de0,#bde9ff,#378de0);position:relative}.route-line:after{content:"♥";position:absolute;left:50%;top:50%;transform:translate(-50%,-55%);background:#10284b;padding:0 8px;color:#bce7ff;animation:pulse 2s infinite}.distance{font-size:clamp(1.8rem,5vw,3rem);font-weight:850;color:#d9f1ff;letter-spacing:-.04em}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:24px}.stat{background:#071a34aa;border:1px solid var(--line);border-radius:16px;padding:16px 8px;text-align:center}.stat b{display:block;font-size:clamp(1.25rem,4vw,2rem);font-variant-numeric:tabular-nums;color:#d8efff}.stat small{color:var(--muted);font-size:.72rem}
+.big-age{font-size:clamp(5rem,20vw,10rem);font-weight:900;line-height:1;background:linear-gradient(180deg,#fff,#65baff);background-clip:text;color:transparent;text-shadow:0 0 55px #3b9bff20}
+.letter{max-width:800px;margin:auto}.envelope{font-size:3.5rem;filter:drop-shadow(0 0 18px #5ab6ff55);margin-bottom:8px}.letter-text{display:none;text-align:left;white-space:pre-line;color:#d8eaff;line-height:1.9;margin-top:24px}.letter-text.open{display:block;animation:fade .8s ease}
+.reasons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.reason{min-height:132px;text-align:left;cursor:pointer;background:#10294a99;border:1px solid var(--line);border-radius:18px;padding:17px;color:var(--white);font:inherit;transition:.2s}.reason:hover,.reason:focus-visible{border-color:#8fd2ff;transform:translateY(-3px)}.reason .num{display:block;color:#81c8ff;font-size:.8rem;letter-spacing:.12em;font-weight:800;margin-bottom:8px}.reason .hidden-reason{display:none;color:#c8e4ff}.reason.revealed .teaser{display:none}.reason.revealed .hidden-reason{display:block;animation:fade .4s}
+.timeline{max-width:700px;margin:auto;position:relative}.timeline:before{content:"";position:absolute;left:14px;top:10px;bottom:10px;width:2px;background:linear-gradient(#4eafff,#163c70)}.event{position:relative;padding:0 0 24px 44px}.event:before{content:"";position:absolute;left:7px;top:8px;width:16px;height:16px;border-radius:50%;background:#8ed5ff;box-shadow:0 0 18px #399eff}.event b{color:#cceaff}.event p{margin:4px 0 0;color:var(--muted)}
+.wishbox{min-height:95px;display:grid;place-items:center;text-align:center;font-size:1.15rem;color:#e0f2ff;margin:18px 0}.clocks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.clock{padding:18px;border-radius:18px;background:#071a34aa;border:1px solid var(--line);text-align:center}.clock b{display:block;font-size:1.5rem;font-variant-numeric:tabular-nums}.clock span{color:var(--muted);font-size:.85rem}
+.final{padding:100px 0;text-align:center}.final h2{font-size:clamp(2.2rem,7vw,4.7rem);line-height:1.08;letter-spacing:-.04em;margin:16px auto;max-width:850px}.final p{max-width:680px;margin:0 auto 25px;color:#c3d8ee}.footer{padding:26px 0 40px;text-align:center;color:#86a8cc;font-size:.85rem;border-top:1px solid var(--line)}
+#toast{position:fixed;inset:auto 16px 22px;z-index:50;display:none;text-align:center;background:#12335a;border:1px solid #9bd8ff66;border-radius:18px;padding:16px;color:white;box-shadow:0 12px 40px #0007;max-width:520px;margin:auto}
+.heart{position:fixed;bottom:-30px;pointer-events:none;z-index:40;animation:rise 3.4s ease-out forwards}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}@keyframes pulse{50%{text-shadow:0 0 14px #72c7ff;transform:translate(-50%,-55%) scale(1.2)}}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@keyframes rise{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@media(max-width:650px){.navinner{min-height:56px}.navlinks{gap:12px;font-size:.78rem}.brand{font-size:.86rem}.hero{padding:54px 0}.grid2{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.reasons{grid-template-columns:repeat(2,minmax(0,1fr))}.reason{min-height:125px;padding:14px}.clocks{grid-template-columns:1fr}.route{margin:22px 0}.timebox{padding:15px 3px}.timebox span{font-size:.62rem}}
+@media(max-width:360px){.wrap{width:calc(100% - 22px)}.navlinks{gap:9px}.navlinks a:nth-child(3){display:none}.reasons{gap:8px}.reason{font-size:.9rem}.countdown{gap:6px}.timebox{border-radius:13px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navinner"><a class="brand" href="#home" style="text-decoration:none">EVAA <span aria-hidden="true">♡</span></a><div class="navlinks"><a href="#countdown">Birthday</a><a href="#us">Our story</a><a href="#letter">Letter</a><a href="#reasons">18 reasons</a><a href="#final">A hug</a></div></div></nav>
+<header class="hero" id="home"><div class="wrap">
+<div class="orb" aria-hidden="true">💙</div><div class="eyebrow">For the girl who makes my world beautiful</div>
+<h1 class="shine">Happy 18th<br>Birthday, Evaa</h1>
+<p>Even thousands of kilometers could never make you feel far from my heart. This little universe is just for you, Saynagg Evaa.</p>
+<button class="btn" id="openSurprise">Open your birthday surprise ✨</button>
+<p style="font-size:.85rem;margin-top:18px;color:#8eafd2">From Navsari, India 🇮🇳 to Tegal, Indonesia 🇮🇩</p>
+</div></header>
+<main>
+<section id="countdown"><div class="wrap"><div class="section-head"><div class="kicker">The day the world got brighter</div><h2>Your special day is almost here 🎂</h2><p>Counting down to the day my favorite person was born.</p></div>
+<div class="countdown" id="birthdayCountdown" aria-live="polite"><div class="timebox"><strong id="bdDays">--</strong><span>Days</span></div><div class="timebox"><strong id="bdHours">--</strong><span>Hours</span></div><div class="timebox"><strong id="bdMinutes">--</strong><span>Minutes</span></div><div class="timebox"><strong id="bdSeconds">--</strong><span>Seconds</span></div></div><p class="center subtle" id="birthdayNote">A little more time until your big day, my Evaa. 💙</p>
+</div></section>
+<section id="us"><div class="wrap"><div class="section-head"><div class="kicker">Two places, one little universe</div><h2>Different countries. Different skies. One heart.</h2><p>Our screens may connect us for now, but you have a place in my everyday life.</p></div>
+<div class="panel"><div class="grid2"><div class="location"><span class="flag">🇮🇳</span><div><h3>Navsari, India</h3><p>Where your person is thinking of you</p></div></div><div class="location"><span class="flag">🇮🇩</span><div><h3>Tegal, Indonesia</h3><p>Where my favorite girl is celebrating</p></div></div></div><div class="route"><span>🇮🇳</span><div class="route-line"></div><span>♥</span><div class="route-line"></div><span>🇮🇩</span></div><div class="center"><div class="distance">≈ 5,000 km</div><p class="subtle">An approximate straight-line distance between our cities — not a travel route.</p></div><p class="center" style="max-width:720px;margin:26px auto 0">We may not be able to hold each other whenever we want, but you are part of my everyday life. Until the day I can hold you close, let this little corner of the internet remind you that someone far away is thinking about you, celebrating you, and choosing to build beautiful memories with you.</p><div class="clocks" style="margin-top:26px"><div class="clock"><span>Time in Navsari</span><b id="indiaClock">--:--:--</b><span>India Standard Time</span></div><div class="clock"><span>Time in Tegal</span><b id="tegalClock">--:--:--</b><span>Western Indonesia Time</span></div></div></div>
+</div></section>
+<section id="relationship"><div class="wrap"><div class="section-head"><div class="kicker">Since 6 May 2026</div><h2>Every second since you became my person 💙</h2><p>Our story is still young, and I am grateful for every moment of it.</p></div><div class="panel center"><div class="stats"><div class="stat"><b id="relDays">0</b><small>Total days</small></div><div class="stat"><b id="relMonths">0m 0d</b><small>Months & days</small></div><div class="stat"><b id="relHours">0</b><small>Total hours</small></div><div class="stat"><b id="relSeconds">0</b><small>Seconds together</small></div></div><p style="max-width:720px;margin:28px auto 0">Since 6 May 2026, my story has had a new kind of happiness. Every conversation, every little moment, every smile, and every memory with you has become something I want to keep close to my heart. This is only the beginning of our story, Evaa.</p></div></div></section>
+<section id="anniversary"><div class="wrap"><div class="section-head"><div class="kicker">Another little milestone</div><h2>Every sixth is a reason to smile 💌</h2><p>One more month of choosing each other, one more little memory to keep.</p></div><div class="panel center"><div class="grid2"><div><p class="subtle">Most recent monthly anniversary</p><h3 id="lastAnniversary">—</h3></div><div><p class="subtle">Next monthly anniversary</p><h3 id="nextAnniversary">—</h3></div></div><div class="countdown" id="anniversaryCountdown"><div class="timebox"><strong id="anDays">--</strong><span>Days</span></div><div class="timebox"><strong id="anHours">--</strong><span>Hours</span></div><div class="timebox"><strong id="anMinutes">--</strong><span>Minutes</span></div><div class="timebox"><strong id="anSeconds">--</strong><span>Seconds</span></div></div><p>Every month with you is another little reason to smile. I don't need a grand occasion to celebrate you. Every sixth of the month reminds me that our story is growing, one beautiful moment at a time.</p></div></div></section>
+<section id="life"><div class="wrap"><div class="section-head"><div class="kicker">19 October 2008</div><h2>18 years of you, and the world is better because you're in it ✨</h2><p>Today, I celebrate every little thing that makes you Evaa.</p></div><div class="panel center"><div class="big-age" id="ageNumber">18</div><h3>Beautiful years of being YOU.</h3><p style="max-width:700px;margin:16px auto">Before I knew your name, you were already becoming the person I would one day feel lucky to know. You had your own little world, your own dreams, your own story, and your own beautiful journey. And somehow, our paths crossed. Thank you for existing, for being yourself, and for bringing happiness into my life.</p><div class="stats"><div class="stat"><b id="lifeDays">—</b><small>Days lived</small></div><div class="stat"><b id="lifeHours">—</b><small>Hours lived</small></div><div class="stat"><b id="lifeMinutes">—</b><small>Minutes lived</small></div><div class="stat"><b id="lifeSeconds">—</b><small>Seconds lived</small></div></div><p class="subtle" id="exactAge"></p></div></div></section>
+<section id="letter"><div class="wrap"><div class="section-head"><div class="kicker">A little piece of my heart</div><h2>A letter just for you 💌</h2><p>Whenever the distance feels big, come back and read this.</p></div><div class="panel letter center"><div class="envelope">💌</div><button class="btn" id="readLetter" aria-expanded="false">Read my heart</button><div class="letter-text" id="letterText">Happy 18th birthday, my Saynagg Evaa. 💙
+
+Today is such a special day because it celebrates the day someone as wonderful as you came into this world. I wish I could be beside you right now, see your beautiful smile, watch you blow out your candles, and give you the longest hug ever. I wish I could look into your eyes and tell you in person how much you mean to me.
+
+But even though I am in Navsari and you are in Tegal, I want this little website to bring a piece of my heart closer to you.
+
+Thank you for coming into my life. Thank you for the happiness you bring me, for the conversations we share, for the little moments that make ordinary days feel special, and for being someone I feel so lucky to know and love.
+
+Sometimes distance is difficult. We cannot always be together when we want to be. We cannot simply reach out and hold each other's hands. But I want you to know that distance does not erase the importance of what we share. Every day gives us another chance to understand each other, care for each other, and create memories that belong only to us.
+
+As you turn 18, I hope this new chapter brings you beautiful opportunities, confidence, peace, laughter, good health, and the courage to follow your dreams. I hope you discover new reasons to be proud of yourself. I hope you always remember that you deserve kindness, respect, happiness, and a love that makes you feel safe being yourself.
+
+Thank you for being born, Evaa. Thank you for being the person you are. And thank you for becoming part of my story.
+
+If I could make one birthday wish for you, it would be that you could see yourself through my eyes for just one moment and understand how precious your existence feels to me.
+
+Happy 18th birthday, my favorite person. May this year be full of beautiful surprises, unforgettable memories, and dreams coming true.
+
+And maybe, someday, the distance between Navsari and Tegal will become a journey we take together, instead of a space between us.
+
+Until then, here is my little piece of the universe, made with you in mind.
+
+With all my love,
+Your person, from Navsari to Tegal. 💙</div></div></div></section>
+<section id="reasons"><div class="wrap"><div class="section-head"><div class="kicker">Eighteen little reminders</div><h2>18 reasons you are special 💙</h2><p>Tap each card to reveal a little reminder made for you.</p></div><div class="reasons" id="reasonsGrid"></div></div></section>
+<section id="timeline"><div class="wrap"><div class="section-head"><div class="kicker">Our story, still unfolding</div><h2>Little milestones, big feelings</h2></div><div class="panel timeline"><div class="event"><b>19 October 2008 · The day Evaa was born</b><p>The world got you, and that is worth celebrating.</p></div><div class="event"><b>6 May 2026 · Our story begins</b><p>A new chapter starts with us.</p></div><div class="event"><b>19 October 2026 · Your 18th birthday</b><p>A beautiful new chapter in your life.</p></div><div class="event"><b>Every 6th of the month · Another milestone</b><p>One more reason to celebrate the story we are building.</p></div><div class="event"><b>Someday · Our first meeting in person</b><p>Not a date we know yet, but a beautiful possibility we can look forward to.</p></div><div class="event"><b>So many memories still ahead</b><p>Our story is not finished. There is so much more to discover.</p></div></div></div></section>
+<section id="wishes"><div class="wrap"><div class="section-head"><div class="kicker">A pocket full of wishes</div><h2>One little wish, just for Evaa ✨</h2><p>Tap whenever you need another birthday wish.</p></div><div class="panel center"><div class="wishbox" id="wishText" aria-live="polite">May this new chapter bring you more joy than you can imagine. 💙</div><button class="btn" id="newWish">Give Evaa a little wish ✨</button></div></div></section>
+<section id="final" class="final"><div class="wrap"><div class="orb" aria-hidden="true">🤍</div><div class="kicker">From Navsari to Tegal</div><h2 class="shine">Distance separates our places, not the meaning you have in my life.</h2><h3>Happy 18th Birthday, My Saynagg Evaa. 💙</h3><p>From my screen to your heart, I hope you always remember how special you are. Your dreams matter, your happiness matters, and your life is worth celebrating. Thank you for being born, and thank you for being part of my world.</p><button class="btn" id="hugButton">One last birthday hug 🤍</button></div></section>
+</main>
+<footer class="footer"><div class="wrap">Made with love, from Navsari to Tegal. 💙</div></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>
+(() => {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const pad = n => String(n).padStart(2, "0");
+  const fmtDate = d => new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"long",year:"numeric",timeZone:"Asia/Jakarta"}).format(d);
+  const birthday = new Date("2026-10-19T00:00:00+07:00");
+  const birth = new Date("2008-10-19T00:00:00+07:00");
+  const relationship = new Date("2026-05-06T00:00:00+07:00");
+  const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  let lastAnniversaryMonth = "";
+  function nextMonthlyAnniversary(now) {
+    const y = now.getFullYear(), m = now.getMonth();
+    let candidate = new Date(y,m,6,0,0,0,0);
+    if (candidate <= now) candidate = new Date(y,m+1,6,0,0,0,0);
+    return candidate;
+  }
+  function updateCountdown(target, ids, doneText) {
+    const now = Date.now(), diff = target.getTime() - now;
+    if (diff <= 0) return false;
+    const seconds = Math.floor(diff/1000);
+    $(ids[0]).textContent = Math.floor(seconds/86400);
+    $(ids[1]).textContent = pad(Math.floor(seconds%86400/3600));
+    $(ids[2]).textContent = pad(Math.floor(seconds%3600/60));
+    $(ids[3]).textContent = pad(seconds%60);
+    return true;
+  }
+  function elapsedParts(start, now) {
+    let years = now.getFullYear()-start.getFullYear();
+    let months = now.getMonth()-start.getMonth();
+    let days = now.getDate()-start.getDate();
+    if (days < 0) {
+      months--;
+      days += new Date(now.getFullYear(),now.getMonth(),0).getDate();
+    }
+    if (months < 0) { years--; months += 12; }
+    return {years,months,days};
+  }
+  function update() {
+    const now = new Date();
+    const birthdayFuture = updateCountdown(birthday,["bdDays","bdHours","bdMinutes","bdSeconds"]);
+    if (!birthdayFuture) {
+      $("birthdayCountdown").innerHTML = '<div class="center" style="grid-column:1/-1"><h2 style="margin:0;color:#dff4ff">IT’S YOUR DAY, MY EVAA! 🎂💙</h2><p>May your 18th year be full of beautiful surprises.</p></div>';
+      $("birthdayNote").textContent = "Happy birthday, my favorite person. Today is all about you. 💙";
+    }
+    const relMs = Math.max(0, now.getTime()-relationship.getTime());
+    const totalSeconds = Math.floor(relMs/1000);
+    $("relDays").textContent = Math.floor(relMs/86400000).toLocaleString("en-US");
+    const parts = elapsedParts(relationship, now);
+    $("relMonths").textContent = parts.months + "m " + parts.days + "d";
+    $("relHours").textContent = Math.floor(relMs/3600000).toLocaleString("en-US");
+    $("relSeconds").textContent = totalSeconds.toLocaleString("en-US");
+    const next = nextMonthlyAnniversary(now);
+    const prev = new Date(next.getFullYear(),next.getMonth()-1,6);
+    $("lastAnniversary").textContent = fmtDate(prev);
+    $("nextAnniversary").textContent = fmtDate(next);
+    updateCountdown(next,["anDays","anHours","anMinutes","anSeconds"]);
+    const monthKey = now.getFullYear()+"-"+now.getMonth()+"-"+now.getDate();
+    if (now.getDate()===6 && lastAnniversaryMonth !== monthKey) {
+      lastAnniversaryMonth = monthKey;
+      showToast("Happy monthly anniversary to us, Evaa! Another little milestone together. 💙");
+      burst(12);
+    }
+    const lifeMs = Math.max(0,now.getTime()-birth.getTime());
+    $("lifeDays").textContent = Math.floor(lifeMs/86400000).toLocaleString("en-US");
+    $("lifeHours").textContent = Math.floor(lifeMs/3600000).toLocaleString("en-US");
+    $("lifeMinutes").textContent = Math.floor(lifeMs/60000).toLocaleString("en-US");
+    $("lifeSeconds").textContent = Math.floor(lifeMs/1000).toLocaleString("en-US");
+    const age = elapsedParts(birth,now);
+    $("exactAge").textContent = "Your journey so far: "+age.years+" years, "+age.months+" months, and "+age.days+" days.";
+    $("indiaClock").textContent = new Intl.DateTimeFormat("en-IN",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:true}).format(now);
+    $("tegalClock").textContent = new Intl.DateTimeFormat("en-ID",{timeZone:"Asia/Jakarta",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:true}).format(now);
+  }
+  const reasons = [
+    ["Because you are uniquely you.","There is nobody else quite like you, and that is beautiful."],
+    ["Because your happiness matters.","I hope life gives you a thousand reasons to smile."],
+    ["Because your smile brightens days.","Even an ordinary day can feel special when you are happy."],
+    ["Because our paths crossed.","I am grateful that our stories found each other."],
+    ["Because you deserve celebration.","Today and every day, you deserve to feel appreciated."],
+    ["Because little moments matter.","The small things we share become memories I treasure."],
+    ["Because your dreams matter.","I hope you keep believing in all the wonderful things you can do."],
+    ["Because you deserve kindness.","May you always be surrounded by patience, care, and respect."],
+    ["Because your individuality is beautiful.","Never feel you have to become someone else to be enough."],
+    ["Because you make me appreciate the little things.","You remind me that happiness can live in small moments."],
+    ["Because I love learning about you.","There is always something new and lovely to discover."],
+    ["Because you deserve to feel safe.","I hope the people around you let you be fully yourself."],
+    ["Because your laughter is worth celebrating.","May you laugh freely and often in this new chapter."],
+    ["Because your future is full of possibilities.","You have so many paths to explore and dreams to chase."],
+    ["Because I treasure our memories.","Every conversation gives our story another little page."],
+    ["Because I am thankful you exist.","The world is better for having you in it."],
+    ["Because there are memories still ahead.","I look forward to the beautiful moments life may bring us."],
+    ["Because you are Evaa.","You do not have to be perfect to be precious to me."]
+  ];
+  const grid = $("reasonsGrid");
+  reasons.forEach((item,i) => {
+    const button = document.createElement("button");
+    button.className = "reason";
+    button.type = "button";
+    button.setAttribute("aria-expanded","false");
+    button.innerHTML = '<span class="num">REASON '+String(i+1).padStart(2,"0")+'</span><span class="teaser">'+item[0]+'</span><span class="hidden-reason">'+item[1]+'</span>';
+    button.addEventListener("click",() => {
+      const open = button.classList.toggle("revealed");
+      button.setAttribute("aria-expanded",String(open));
+    });
+    grid.appendChild(button);
+  });
+  const wishes = [
+    "May your 18th year bring you courage for your dreams and peace for your heart. 💙",
+    "May you always find people who celebrate the real you.",
+    "May your days hold little surprises that make you smile.",
+    "May you be proud of how far you have come and excited for where you are going.",
+    "May you feel loved, respected, and appreciated in all the ways you deserve.",
+    "May every new chapter bring you closer to the life you dream of.",
+    "May your heart stay hopeful, even on the difficult days.",
+    "May you have the courage to try, the freedom to grow, and the joy to celebrate.",
+    "May laughter find you often and worries feel a little lighter.",
+    "May you always remember that your worth is not measured by perfection.",
+    "May your health, happiness, and peace grow with you this year.",
+    "May new places, ideas, and experiences make your world bigger.",
+    "May your hard work open doors you once only imagined.",
+    "May you be gentle with yourself while you are learning and growing.",
+    "May you collect beautiful memories and people who make life kinder.",
+    "May your dreams feel possible, one small step at a time.",
+    "May you always have reasons to believe in tomorrow.",
+    "May you see how much beauty you bring simply by being yourself.",
+    "May your birthday remind you how precious your life is.",
+    "And may you never forget that someone in Navsari is sending you the biggest birthday hug. 🤍"
+  ];
+  let previousWish = 0;
+  $("newWish").addEventListener("click",() => {
+    let next; do { next = Math.floor(Math.random()*wishes.length); } while(next===previousWish);
+    previousWish = next;
+    $("wishText").style.opacity = "0";
+    setTimeout(() => { $("wishText").textContent = wishes[next]; $("wishText").style.opacity = "1"; },180);
+  });
+  $("readLetter").addEventListener("click",() => {
+    const open = $("letterText").classList.toggle("open");
+    $("readLetter").textContent = open ? "Close my letter 💙" : "Read my heart";
+    $("readLetter").setAttribute("aria-expanded",String(open));
+    if(open) $("letterText").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"nearest"});
+  });
+  function showToast(message) {
+    const toast = $("toast"); toast.textContent = message; toast.style.display = "block";
+    clearTimeout(showToast.timer); showToast.timer = setTimeout(() => toast.style.display="none",5000);
+  }
+  function burst(count=24) {
+    const symbols = ["💙","♡","✦","✨","🤍"];
+    for(let i=0;i<count;i++){
+      const el = document.createElement("span"); el.className="heart";
+      el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+      el.style.left=(Math.random()*100)+"vw"; el.style.fontSize=(14+Math.random()*22)+"px";
+      el.style.animationDuration=(2.3+Math.random()*2)+"s";
+      document.body.appendChild(el); setTimeout(()=>el.remove(),4800);
+    }
+  }
+  $("openSurprise").addEventListener("click",() => {
+    burst(26); showToast("Surprise, my Evaa! I made this little universe just for you. 💙");
+    $("countdown").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
+  });
+  $("hugButton").addEventListener("click",() => {
+    burst(38); showToast("If I could cross every kilometer between us right now, I would use them all to get one step closer to you. Biggest virtual hug, Evaa. 💙🤍");
+  });
+  update(); setInterval(update,1000);
+})();
+</script>
+</body>
+</html>
